@@ -119,13 +119,13 @@ def check_condition(data):
         return False
 
 
-def analyze(json_data):
+def analyze(json_datas):
     """
     分析获取的数据
     :return 符合过滤条件的数据
     """
     result_data = []
-    for fi_data in json_data:
+    for fi_data in json_datas:
         if check_condition(fi_data):
             result_data.append(fi_data)
     return result_data
